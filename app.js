@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(".")); //images and css folder are in the same level of app.js
 
-app.listen(3000, () => {
+app.listen(process.env.PORT||3000, () => {
 	console.log("Express listen on port 3000");
 });
 
