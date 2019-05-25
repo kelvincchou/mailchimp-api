@@ -32,7 +32,7 @@ app.post("/", (req, res) => {
         	url: "https://us20.api.mailchimp.com/3.0/lists/95c2701909",
 		method: "POST",
 		headers: {
-			"Authorization": "mingor 9f313fa7bbe6b3db2c16a06d2aa631e1-us20"
+			"Authorization": "mingor ab197f03e9c5dabdef90a3e20661bbda-us20"
 		},
         	body: jsonData		
         } //end options
