@@ -1,6 +1,6 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const request = require("request");
+const express = require("express"); //web server
+const bodyParser = require("body-parser"); //help express handle post request, req.body
+const request = require("request"); //simplified http client
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,7 +32,8 @@ app.post("/", (req, res) => {
         	url: "https://us20.api.mailchimp.com/3.0/lists/95c2701909",
 		method: "POST",
 		headers: {
-			"Authorization": "mingor ab197f03e9c5dabdef90a3e20661bbda-us20"
+                        //Add you API key here:   								
+			"Authorization": "anything ab197f03e9c5dxxxxxxxxxxxxxxxxxxxxx"
 		},
         	body: jsonData		
         } //end options
